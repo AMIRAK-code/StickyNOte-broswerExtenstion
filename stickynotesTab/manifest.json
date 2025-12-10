@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Sticky Notes",
+  "version": "1.0",
+  "description": "Leave a persistent sticky note on any URL.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
